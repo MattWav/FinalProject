@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32414.318
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DynamicECommerce", "DynamicECommerce.csproj", "{0C63B8FF-E50C-43B3-87D1-C28E7E6BCF55}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DECommerce.Models", "..\DECommers.Models\DECommerce.Models.csproj", "{6321B710-6E35-4256-9CD2-18FBE27FB511}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DECommerce.Repository", "..\DECommerce.Repository\DECommerce.Repository.csproj", "{01DFD662-B353-49B9-B485-DBE4EC384ABA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DECommerce.Interfaces", "..\DECommerce.Interfaces\DECommerce.Interfaces.csproj", "{F576AFF6-72F8-438D-92B5-5CC5DB062F09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DECommerceConfigurationRepository", "..\DECommerceConfigurationRepository\DECommerceConfigurationRepository.csproj", "{673DC890-07AC-44EA-96A0-3CF0BCEC2603}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0C63B8FF-E50C-43B3-87D1-C28E7E6BCF55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C63B8FF-E50C-43B3-87D1-C28E7E6BCF55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C63B8FF-E50C-43B3-87D1-C28E7E6BCF55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C63B8FF-E50C-43B3-87D1-C28E7E6BCF55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6321B710-6E35-4256-9CD2-18FBE27FB511}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6321B710-6E35-4256-9CD2-18FBE27FB511}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6321B710-6E35-4256-9CD2-18FBE27FB511}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6321B710-6E35-4256-9CD2-18FBE27FB511}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01DFD662-B353-49B9-B485-DBE4EC384ABA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01DFD662-B353-49B9-B485-DBE4EC384ABA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01DFD662-B353-49B9-B485-DBE4EC384ABA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01DFD662-B353-49B9-B485-DBE4EC384ABA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F576AFF6-72F8-438D-92B5-5CC5DB062F09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F576AFF6-72F8-438D-92B5-5CC5DB062F09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F576AFF6-72F8-438D-92B5-5CC5DB062F09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F576AFF6-72F8-438D-92B5-5CC5DB062F09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{673DC890-07AC-44EA-96A0-3CF0BCEC2603}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{673DC890-07AC-44EA-96A0-3CF0BCEC2603}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{673DC890-07AC-44EA-96A0-3CF0BCEC2603}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{673DC890-07AC-44EA-96A0-3CF0BCEC2603}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1E910AF2-8022-47C4-9B22-726381157F21}
+	EndGlobalSection
+EndGlobal
