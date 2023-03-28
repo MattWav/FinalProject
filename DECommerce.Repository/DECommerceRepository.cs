@@ -101,7 +101,7 @@ namespace DECommerce.Repository
         public List<Products> GetProducts()
         {
             List<Products> products = new List<Products>();
-
+            //.Skip(10*2).Take(10) per la paginazione
             products = _model.Products.ToList();
             return products;
         }
@@ -166,6 +166,12 @@ namespace DECommerce.Repository
             _model.Remove(productCategories);
             result = _model.SaveChanges() > 0;
             return result;
+        }
+        // get productCategoriesid
+        public ProductCategories GetProductsCategoriesbyId(int ProductsCategoriesID)
+        {
+            ProductCategories productCategories = _model.ProductCategories.FirstOrDefault(x => x.ProductCategoriesID == ProductsCategoriesID);
+            return productCategories;
         }
 
         //GET order

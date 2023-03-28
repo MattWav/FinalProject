@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Controllers",
+    "\\DECommerce.Interfaces",
+    "\\DECommerce.Repository",
+    "\\DECommerceConfigurationRepository",
+    "\\DECommers.Models"
+  ],
+  "SelectedNode": "\\Program.cs",
+  "PreviewInSolutionExplorer": false
+}

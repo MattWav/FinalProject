@@ -10,7 +10,7 @@ namespace DynamicECommerce.Controllers
     [ApiController]
     public class ProductCategoriesController : ControllerBase
     {
-        private IDECommerceRepository _iDECommerceRepository;
+        private IDECommerceRepository _iDECommerceRepository;   
 
 
         public ProductCategoriesController(IDECommerceRepository DECommerceRepository)
@@ -37,7 +37,28 @@ namespace DynamicECommerce.Controllers
 
             return result;
         }
-        [Authorize(Roles = "2")]
+
+        //get request
+        [HttpGet("{ProductCategoriesID:int}")]
+        public async Task<ActionResult<IEnumerable<ProductCategories>>> GetProductsCategoriesbyId(int ProductCategoriesID)
+        {
+            ProductCategories ProductCategories = new ProductCategories();
+            ActionResult result = null;
+            try
+            {
+                ProductCategories = _iDECommerceRepository.GetProductsCategoriesbyId(ProductCategoriesID);
+                result = Ok(ProductCategories);
+
+            }
+            catch (Exception ex)
+            {
+                result = StatusCode(StatusCodes.Status500InternalServerError,
+                    $"Error while getting BankAccounts {ex.Message}");
+            }
+
+            return result;
+        }
+
         [HttpPost]
         public async Task<ActionResult<ProductCategories>> CreateProductCategories(ProductCategories productCategories)
         {

@@ -8,6 +8,7 @@ using Jose;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using Microsoft.AspNetCore.Http.Features;
 
 var builder = WebApplication.CreateBuilder(args);
 // add IDECommerceRepository
@@ -84,7 +85,7 @@ builder.Services.AddSwaggerGen(opt =>
         Scheme = "bearer"
     });
 
-
+    
     opt.AddSecurityRequirement(new OpenApiSecurityRequirement
     {
         {
@@ -99,6 +100,13 @@ builder.Services.AddSwaggerGen(opt =>
             Array.Empty<string>()
         }
     });
+});
+
+builder.Services.Configure<FormOptions>(options =>
+{
+    options.ValueLengthLimit = int.MaxValue;
+    options.MultipartBodyLengthLimit = int.MaxValue;
+    options.MemoryBufferThreshold = int.MaxValue;
 });
 
 

@@ -14,14 +14,18 @@ namespace DECommers.Models
         public int ProductCategoriesID { get; set; }
         public decimal? UnitPrice { get; set; }
         public string? Field1 { get; set; }
-        public string? Field2 { get; set; }
-        public string? Field3 { get; set; }
+        public string? Field2 { get; set; } 
+        public string? imageValue { get; set; }
+        public int? Field3 { get; set; }
         public int? Field4 { get; set; }
-        public int? Field5 { get; set; }
+
+  
 
         //------------------------------------Relazioni tra tabelle------------------------------------
 
         public ProductCategories ProductCategories { get; set; } //Relazione con la tabella ProductCategories
         public List<OrderDetails> OrderDetails { get; set; } //Relazione con la tabella Orders
+
+
     }
 }

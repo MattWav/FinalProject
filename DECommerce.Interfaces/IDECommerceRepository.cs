@@ -23,12 +23,13 @@ namespace DECommerce.Interfaces
         // PRODUCTS
         List<Products> GetProducts();
         Products GetProductsbyId(int ProductID);
-        List<Products> GetProductsbyCategoriesId(int ProductCategoriesID);
+        List<Products> GetProductsbyCategoriesId(int ProductCategoriesID);  
         bool DeleteProducts(int ProductID);
         bool CreateProduct(Products products);
 
         // PRODUCTS Categories
         List<ProductCategories> GetProductCategories();
+        ProductCategories GetProductsCategoriesbyId(int ProductCategoriesID);
         bool CreateProductCategories(ProductCategories productCategories);
         bool DeleteProductCategories(int ProductCategoriesID);
 
